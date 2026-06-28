@@ -2,54 +2,7 @@
 
 An AI-powered financial operating system for SMEs and informal businesses in Kenya. Nest unifies cash position across M-Pesa, banks, and branches in real time, tracks debts, generates AI insights, and builds a verified Financial Passport for credit access.
 
-## Tech Stack
 
-- **Framework**: TanStack Start v1 (React 19, Vite 7)
-- **Styling**: Tailwind CSS v4 with OKLCH color tokens
-- **UI Components**: shadcn/ui
-- **Backend**: Supabase (Postgres + Auth + RLS)
-- **AI**: Lovable AI Gateway (Google Gemini 3 Flash)
-- **Icons**: lucide-react
-- **Notifications**: sonner
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- Supabase account (for backend)
-
-### Installation
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Set up Supabase:
-   - Create a new project at https://supabase.com
-   - Run the migrations in `supabase/migrations/` in order
-   - Enable Email + Password authentication
-   - Configure Google OAuth provider
-   - Copy your Supabase URL and anon key to `.env`
-
-3. Configure environment variables:
-```env
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-4. Run the development server:
-```bash
-npm run dev
-```
-
-5. Open http://localhost:5173 in your browser
-
-## Project Structure
-
-```
 nest-protocol/
 ├── src/
 │   ├── components/          # Reusable components
